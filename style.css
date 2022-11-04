@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  max-height: 100vh;
+  background-color: #182747;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.game-container {
+  display: none;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: auto auto;
+  margin-bottom: 50px;
+}
+
+.cell {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 60px;
+  border: none;
+  border-bottom: 3px solid #d8d8d8;
+  border-right: 3px solid #d8d8d8;
+  cursor: pointer;
+}
+
+.game-status {
+  padding-bottom: 25px;
+}
+
+.player-inputs {
+  margin: 15px 0;
+}
+
+.player {
+  margin: 0 10px;
+  outline: none;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 1rem;
+  border: 0;
+  background-color: #647e68;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+}
+
+button.restart-game {
+  display: none;
+}
+
+button.restart-game:hover {
+  background-color: #455848;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6) {
+  border-right: 0;
+}
+
+.cell:nth-child(7),
+.cell.cell:nth-child(8) {
+  border-bottom: 0;
+}
+
+.cell:nth-child(9) {
+  border-bottom: 0;
+  border-right: 0;
+}
+
+h1.game-title {
+  font-size: 4rem;
+}
+
+.chosen-players {
+  font-size: 4rem;
+  text-align: center;
+  justify-content: space-around;
+  display: none;
+}
+
+.chosen-players div {
+  width: 100%;
+}
